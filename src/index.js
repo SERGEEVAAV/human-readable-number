@@ -12,10 +12,10 @@ module.exports = function toReadable (number) {
   if(number < 10) {
     return ones[number];
   }
-  if(number >= 10 && number <= 19) {
+  if(number >= 10 && number <= 99) {
     return teens[numberString[1]];
   }
-  if(number.lenght == 2 && numberString[0] >= 2) {
+  if(number.lenght === 2 && numberString[0] >= 2) {
     return tens[numberString[0]] + ' ' + ones[numberString[1]];
   }
 }
