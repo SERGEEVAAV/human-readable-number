@@ -17,7 +17,7 @@ module.exports = function toReadable (number) {
   }
 
   if(numberString.length === 2 && numberString[0] >= 2){
-    return tens[numberString[0]]  + '' + ones[numberString[1]];
+    return tens[numberString[0]]  + ' ' + ones[numberString[1]];
   }
   if(numberString.length === 3) {
     if(numberString[1] == 0 && numberString[2] == 0) {
